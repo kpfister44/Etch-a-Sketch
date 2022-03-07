@@ -1,112 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    
+}
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     column-gap: 3px;
     row-gap: 3px;
-    width: 100vw;
-    height: 100vh;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
 }
-.gridItemRow1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
+.gridItem {
     min-height: 0;
     height: 100%;
+    border: 1px solid black
 }
-.gridItemRow2 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow3 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow4 {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow5 {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow6 {
-    grid-row-start: 6;
-    grid-row-end: 7;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow7 {
-    grid-row-start: 7;
-    grid-row-end: 8;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow8 {
-    grid-row-start: 8;
-    grid-row-end: 9;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow9 {
-    grid-row-start: 9;
-    grid-row-end: 10;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow10 {
-    grid-row-start: 10;
-    grid-row-end: 11;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow11 {
-    grid-row-start: 11;
-    grid-row-end: 12;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow12 {
-    grid-row-start: 12;
-    grid-row-end: 13;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow13 {
-    grid-row-start: 13;
-    grid-row-end: 14;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow14 {
-    grid-row-start: 14;
-    grid-row-end: 15;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow15 {
-    grid-row-start: 15;
-    grid-row-end: 16;
-    min-height: 0;
-    height: 100%;
-}
-.gridItemRow16 {
-    grid-row-start: 16;
-    grid-row-end: 17;
-    min-height: 0;
-    height: 100%;
-}
+
 .button {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    border: 1px solid black
 }
 
