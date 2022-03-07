@@ -2,166 +2,111 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    column-gap: 3px;
+    row-gap: 3px;
+    width: 100vw;
+    height: 100vh;
 }
 .gridItemRow1 {
     grid-row-start: 1;
     grid-row-end: 2;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow2 {
     grid-row-start: 2;
     grid-row-end: 3;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow3 {
     grid-row-start: 3;
     grid-row-end: 4;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow4 {
     grid-row-start: 4;
     grid-row-end: 5;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow5 {
     grid-row-start: 5;
     grid-row-end: 6;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow6 {
     grid-row-start: 6;
     grid-row-end: 7;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow7 {
     grid-row-start: 7;
     grid-row-end: 8;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow8 {
     grid-row-start: 8;
     grid-row-end: 9;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow9 {
     grid-row-start: 9;
     grid-row-end: 10;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow10 {
     grid-row-start: 10;
     grid-row-end: 11;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow11 {
     grid-row-start: 11;
     grid-row-end: 12;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow12 {
     grid-row-start: 12;
     grid-row-end: 13;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow13 {
     grid-row-start: 13;
     grid-row-end: 14;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow14 {
     grid-row-start: 14;
     grid-row-end: 15;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow15 {
     grid-row-start: 15;
     grid-row-end: 16;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
 .gridItemRow16 {
     grid-row-start: 16;
     grid-row-end: 17;
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    align-items: center;
     min-height: 0;
     height: 100%;
 }
+.button {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+

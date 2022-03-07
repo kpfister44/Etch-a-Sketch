@@ -1,5 +1,14 @@
 const gridContainer = document.querySelector('.gridContainer')
 
+const resetButton = document.createElement('button');
+resetButton.classList.add("button");
+resetButton.textContent = "Reset";
+gridContainer.appendChild(resetButton);
+
+const buttonChoice = document.querySelector('.button');
+console.log(buttonChoice);
+buttonChoice.addEventListener('click', resetGrid);
+
 let BLOCKS_PER_CHART = 16;
 let row1 = generateRow1();
 let row2 = generateRow2();
@@ -26,7 +35,6 @@ function generateRow1() {
     gridItem = document.createElement("div");
     gridItem.className = "gridItemRow1";
     gridItem.classList.add ("item");
-    gridItem.textContent = "X";
     gridContainer.append(gridItem);
   }
 }
@@ -37,7 +45,6 @@ function generateRow2() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow2";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -48,7 +55,6 @@ function generateRow3() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow3";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -59,7 +65,6 @@ function generateRow4() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow4";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -69,7 +74,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow5";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -79,7 +83,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow6";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -89,7 +92,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow7";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -99,7 +101,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow8";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -109,7 +110,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow9";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -119,7 +119,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow10";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -129,7 +128,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow11";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -139,7 +137,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow12";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -149,7 +146,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow13";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -159,7 +155,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow14";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -169,7 +164,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow15";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -179,7 +173,6 @@ function generateRow5() {
       gridItem = document.createElement("div");
       gridItem.className = "gridItemRow16";
       gridItem.classList.add ("item");
-      gridItem.textContent = "X";
       gridContainer.append(gridItem);
     }
   }
@@ -193,11 +186,17 @@ console.log(test)
   test.forEach((test) => {
       test.addEventListener("mouseenter", function(event) {
         event.target.style.backgroundColor = "purple";
+        // reset the color after a short delay
+        /*setTimeout(function() {
+          event.target.style.backgroundColor = "";
+        }, 1000);*/
       });
-  });
+      });
 
-  // reset the color after a short delay
-  /*setTimeout(function() {
-    event.target.style.color = "";
-  }, 500);
-}, false);*/
+function resetGrid () {
+  test.forEach((test) => {
+    test.style.backgroundColor = "";
+});
+let gridSize = prompt("How many squares would you like the grid to be?");
+}
+      
