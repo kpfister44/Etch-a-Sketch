@@ -42,7 +42,13 @@ function resetGrid() {
     test.style.backgroundColor = "";
   });
   numBox = prompt("How wide would you like the Etch-a-Sketch to be?");
-  console.log(numBox);
+  if (numBox > 100) {
+    alert("The Etch-a-Sketch can't be wider than 100 boxes. Please choose a number less than 100!");
+    resetGrid();
+  } else if (numBox == NaN || numBox == null) {
+    alert("Make sure you input a number!");
+    resetGrid();
+  }
   clearGrid();
   generateGrid(numBox);
 }
